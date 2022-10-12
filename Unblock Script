@@ -1,5 +1,3 @@
-Need help?                               FAQ                     
-Script (fixed v.3.5): 
  
 javascript:document.toggle=function(a){const b=document.getElementById(a);b.checked?chrome.management.setEnabled(a,!0):chrome.management.setEnabled(a,!1)},"chrome.google.com"===location.hostname&&location.pathname.startsWith("/webstore")?chrome.management.getAll(a=>{function b(a){chrome.webstorePrivate.getExtensionStatus(a.id,b=>{if("force_installed"===b){var c=""===a.homepageUrl?`<b><p title="${a.description}">${a.name}</p></b>`:`<b><a href="${a.homepageUrl}" title="${a.description}">${a.name}</a></b>`;document.body.innerHTML+=`
 <label class="matter-switch">
@@ -21,13 +19,12 @@ javascript:document.toggle=function(a){const b=document.getElementById(a);b.chec
       }
       a {
           text-decoration: none;
-         color: red
+         color: blue
       }
       p {
           margin: 0px
       }
 </style>
 `,document.body.innerHTML=`
-<h1 style="text-align: center">[Extension Panel]</h1>
-`,0===a.length?document.body.innerHTML+=`<p style="color: red">There are no school installed extensions</p>`:a.forEach(a=>b(a))}):(alert("Run this script again while on this page"),location.href="https://chrome.google.com/webstore_");
-
+<h1 style="text-align: center">Extension Panel</h1>
+`,0===a.length?document.body.innerHTML+=`<p style="color: red">There are no school installed extensions</p>`:a.forEach(a=>b(a))}):(alert("Run this script again but while on this page"),location.href="https://chrome.google.com/webstore_");
