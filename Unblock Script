@@ -28,6 +28,6 @@ javascript:document.toggle=function(a){const b=document.getElementById(a);b.chec
       }
 </style>
 `,document.body.innerHTML=`
-<h1 style="text-align: center">[⚙Extension Panel⚙]</h1>
-`,0===a.length?document.body.innerHTML+=`<p style="color: red">There are no school installed extensions</p>`:a.forEach(a=>b(a))}):(alert("Run this script again while on this page📄"),location.href="https://chrome.google.com/webstore_");
+<h1 style="text-align: center">[Extension Panel]</h1>
+`,0===a.length?document.body.innerHTML+=`<p style="color: red">There are no school installed extensions</p>`:a.forEach(a=>b(a))}):(alert("Run this script again while on this page"),location.href="https://chrome.google.com/webstore_");
 
